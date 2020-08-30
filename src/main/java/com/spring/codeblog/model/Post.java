@@ -19,13 +19,13 @@ public class Post {
 	private String title;
 	
 	@NotBlank
-	@Lob
 	private String author;
 	
 	@JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "dd-MM-yyyy")
 	private LocalDate date;
 	
 	@NotBlank
+	@Lob
 	private String text;
 
 	public Long getId() {
